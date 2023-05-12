@@ -13,9 +13,9 @@ Allow experimentation with an alternate token naming system
 # Rationale
 Counterparty has established a beautiful asset naming system which allows for registration of unique assets and subassets, but it requires the use of XCP as an anti-spam mechanism. One of the criticizms of Counterparty has been that it requires XCP in order to use the platform. This is untrue, as you can use Counterparty and issue a numeric asset using only BTC. However, it is clear that some people see this "anti-spam" mechanism as unnecessary, and there is a desire for possible alternate naming systems to be explored.
 
-This proposal establishes a new token naming system which will allow additional experimentation with "tokens" on Bitcoin and via the Counterparty `broadcast` system.
+This proposal establishes a new token naming system which will allow additional experimentation with "tokens" on Bitcoin via the Counterparty `broadcast` system.
 
-By establishing 3 pre-defined broadcast formats, users can `ISSUE`, `MINT`, and `SEND` tokens. With these 3 functions we can create tokens, allow users to mint them in a decentralized "fair" way, and allow for the moving of these new tokens between users. 
+By establishing 3 pre-defined broadcast formats, users can `ISSUE`, `MINT`, and `SEND` tokens. With these 3 functions we can create tokens, allow users to mint them in a decentralized "fair" way, and allow for the moving of these new tokens between addresses. 
 
 This spec can be extended in the future to allow for additional options and formats.
 
