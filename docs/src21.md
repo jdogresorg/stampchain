@@ -1,5 +1,5 @@
         Title: SRC-21
-        Author: Jeremy Johnson (J-Dog), MikeinSpace, RΞINAMORA, & Arwyn
+        Author: Jeremy Johnson (J-Dog), MikeinSpace
         Status: Draft
         Type: Standards
         Created: 2023-05-12
