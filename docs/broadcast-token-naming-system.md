@@ -45,7 +45,7 @@ In order for different projects to experiment with features in the Broadcast Tok
 ## `DEPLOY` format
 This format allows one to create a token and specify the following information about it
 
-- `NAME` - 1 to 250 characters in length (a-zA-Z0-9.-_@! - rules below)
+- `TICK` - 1 to 250 characters in length (a-zA-Z0-9.-_@! - rules below)
 - `MAX_SUPPLY` - Maximum token supply (max: 18,446,744,073,709,551,615 - commas not allowed)
 - `MAX_MINT` - Maximum amount of supply a `MINT` transaction can issue
 - `DECIMALS` - Number of decimal places token should have (max: 18, default: 0)
@@ -54,7 +54,7 @@ This format allows one to create a token and specify the following information a
 - `TRANSFER_SUPPLY` - Address to transfer `MINT_SUPPLY` to (mint initial supply and transfer to address)
 
 **Broadcast Format:**
-`DEPLOY|NAME|MAX_SUPPLY|MAX_MINT|DECIMALS|MINT_SUPPLY|TRANSFER|TRANSFER_SUPPLY`
+`DEPLOY|TICK|MAX_SUPPLY|MAX_MINT|DECIMALS|MINT_SUPPLY|TRANSFER|TRANSFER_SUPPLY`
 
 **Example 1:**
 `DEPLOY|JDOG|1000|1|0`
@@ -71,12 +71,12 @@ The above example issues a TEST token with a max supply of 100, and a maximum mi
 ## `MINT` format
 This format allows one to mint token supply
 
-- `NAME` - `token` name registered with `DEPLOY` format
+- `TICK` - `token` name registered with `DEPLOY` format
 - `AMOUNT` - Amount of tokens to mint
 - `TRANSFER` - Address to transfer tokens to
 
 **Broadcast Format:**
-`MINT|NAME|AMOUNT|TRANSFER`
+`MINT|TICK|AMOUNT|TRANSFER`
 
 **Example 1:**
 `MINT|JDOG|1`
@@ -89,12 +89,12 @@ The above example mints 100 BRRR tokens and transfers them to 1JDogZS6tQcSxwfxhv
 ## `TRANSFER` format
 This format allows one to transfer or send a `token` between addresses
 
-- `NAME` - `token` name registered with `DEPLOY` format
+- `TICK` - `token` name registered with `DEPLOY` format
 - `AMOUNT` - Amount of tokens to send
 - `DESTINATION` - Address to transfer tokens to
 
 **Broadcast Format:**
-`TRANSFER|NAME|AMOUNT|DESTINATION`
+`TRANSFER|TICK|AMOUNT|DESTINATION`
 
 **Example 1:**
 `TRANSFER|JDOG|1|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev`
