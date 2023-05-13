@@ -93,8 +93,16 @@ This format allows one to transfer or send a `token` between addresses
 - `AMOUNT` - Amount of tokens to send
 - `DESTINATION` - Address to transfer tokens to
 
+This format also allows for repeating `AMOUNT` and `DESTINATION` to enable multiple transfers in a single transaction
+
 **Broadcast Format:**
 `TRANSFER|TICK|AMOUNT|DESTINATION`
+
+**Broadcast Format2:**
+`TRANSFER|TICK|AMOUNT|DESTINATION|AMOUNT|DESTINATION`
+
+**Broadcast Format3:**
+`TRANSFER|TICK|AMOUNT|DESTINATION|TICK|AMOUNT|DESTINATION`
 
 **Example 1:**
 `TRANSFER|JDOG|1|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev`
@@ -104,9 +112,14 @@ The above example sends 1 JDOG token to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
 `TRANSFER|BRRR|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev`
 The above example sends 5 BRRR tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
 
-## Open Questions
-- Should we allow for special symbols like in src-20? (will require base64 encoding name)
-- Should we put in basic rule framework (min/max supply, first issue on name is `valid`, mint until `MAX_SUPPLY`, etc)
+**Example 3:**
+`TRANSFER|BRRR|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|1|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9`
+The above example sends 5 BRRR tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev and 1 BRRR token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
+
+**Example 4:**
+`TRANSFER|BRRR|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|TEST|1|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9`
+The above example sends 5 BRRR tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev and 1 TEST token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
+
 
 # Copyright
 This document is placed in the public domain.
