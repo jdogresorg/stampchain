@@ -18,7 +18,7 @@ The [`Broadcast Token Naming System (BTNS)`](./broadcast-token-naming-system.md)
 `SRC-21` merges `SRC-20` and `BTNS` functionality to establish a new `STAMP` token name system. `SRC-21` tokens are deployed, minted, and transferred by broadcasting specially formatted messages using the `Counterparty` `broadcast` transaction type.
 
 # Definitions
-- `BRC-20` - Stamps Request For Comment 20
+- `BRC-20` - Bitcoin Request For Comment 20
 - `SRC-20` - Stamps Request For Comment 20
 - `STAMP` - A specific `token` in `SRC-21` which is required to perform some actions
 - `JSON` - Encoding format for representing Javascript object literals, arrays, and scalar data.
