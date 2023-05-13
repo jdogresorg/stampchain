@@ -1,4 +1,4 @@
-        Title: Broadcast Token Naming System 
+        Title: Broadcast Token Naming System (BTNS)
         Author: Jeremy Johnson (J-Dog) & Stamp Devs
         Status: Draft
         Type: Standards
@@ -31,6 +31,16 @@ This spec was inspired in part by brc-20 and src-20 and seeing the desire to exp
 
 # Specification
 This spec defines 3 formats `DEPLOY`, `MINT`, and `TRANSFER` which will allow for creation of tokens, supply, and sending between users
+
+## Project Prefix
+In order for different projects to experiment with features in the Broadcast Token Naming System (BTNS) and not collide with one another, each project should establish a unique prefix for their project to use in their broadcasts, like `STAMP:`.
+
+**Example 1**
+`STAMP:DEPLOY|JDOG|1000|1|0`
+
+**Example 2**
+`STAMP:MINT|JDOG|1`
+
 
 ## `DEPLOY` format
 This format allows one to create a token and specify the following information about it
