@@ -13,7 +13,7 @@ Extend `SRC-20` functionality, allow for more efficient data encoding, and move 
 # Rationale
 [`BRC-20`](https://domo-2.gitbook.io/brc-20-experiment/) and [`SRC-20`](./src20.md) established new `token` naming systems, but have done so very inefficiently. The usage of `JSON` and `base64` encoding leads to bigger transaction sizes than necessary, making transactions more costly to mine.
 
-The `Broadcast Token Naming System (BTNS)` specification establishes a token naming system via the `Counterparty` `broadcast` function. The `BTNS` is more efficient at storing data, because it uses a pre-defined format for its fields, doing away with the need for `JSON` and `base64` encoding which bloat transaction size.
+The [`Broadcast Token Naming System (BTNS)`](https://github.com/CounterpartyXCP/cips/blob/master/cip-0028.md) specification establishes a token naming system via the `Counterparty` `broadcast` function. The `BTNS` is more efficient at storing data, because it uses a pre-defined format for its fields, doing away with the need for `JSON` and `base64` encoding which bloat transaction size.
 
 `SRC-20.1` merges `SRC-20` and `BTNS` functionality to establish a new `STAMP` token name system. `SRC-20.1` tokens are deployed, minted, and transferred by broadcasting specially formatted messages using the `Counterparty` `broadcast` transaction type.
 
