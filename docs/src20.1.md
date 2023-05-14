@@ -76,10 +76,6 @@ The above example mints 1 STMP `token` to the broadcasting address
 `st:MINT|KEVIN|100|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev`
 The above example mints 100 KEVIN tokens and transfers them to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev 
 
-### Rules
-- `token` supply may be minted until `MAX_SUPPLY` is reached.
-- Transactions that attempt to mint supply beyond `MAX_SUPPLY` shall be considered invalid and ignored.
-
 ## TRANSFER
 A `token` may be transferred by performing a `Counterparty` `broadcast` using the `TRANSFER` command. The params that can be defined when transferring a `token` are :
 
@@ -113,12 +109,6 @@ The above example sends 5 STMP tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev and 
 **Example 4:**
 `st:TRANSFER|STMP|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|KEVIN|3|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9`
 The above example sends 5 STMP tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev and 3 KEVIN token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
-
-### Rules
-- A `token` transfer shall only be considered valid if the broacasting address has balances of the `token` to cover the transfer `AMOUNT`
-- A `token` transfer that does _not_ have `AMOUNT` in the broadcasting address shall be considered invalid and ignored.
-- A valid `token` transfer will deduct the `token` `AMOUNT` from the broadcasting addresses balances
-- A valid `token` tranfer will credit the `token` `AMOUNT` to the `DESTINATION` address
 
 ## Summary
 
