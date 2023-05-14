@@ -35,7 +35,7 @@ The [`Broadcast Token Naming System (BTNS)`](https://github.com/CounterpartyXCP/
 ## DEPLOY
 A `token` may be issued by performing a `Counterparty` `broadcast` using the `DEPLOY` command. The params that can be defined when issuing a `token` are :
 
-- `TICK` - 1 to 250 characters in length (a-zA-Z0-9.-_@!)
+- `TICK` - 1 to 5 characters in length
 - `MAX_SUPPLY` - Maximum token supply (max: 18,446,744,073,709,551,615 - commas not allowed)
 - `MAX_MINT` - Maximum amount of supply a `MINT` transaction can issue
 - `DECIMALS` - Number of decimal places token should have (max: 18, default: 0)
